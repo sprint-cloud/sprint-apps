@@ -6,7 +6,10 @@ metadata:
 spec:
   destinations:
   - namespace: staging
-    server: 'https://kubernetes.default.svc'
   clusterResourceWhitelist:
   - group: 'serving.knative.dev'
     kind: 'Service'
+  - group: argoproj.io/v1alpha1
+    kind: 'Application'
+  sourceRepos: 
+    - 'https://github.com/sprint-cloud/sprint-apps'

@@ -8,7 +8,7 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  project: default
+  project: app-production
   source:
     repoURL: 'https://github.com/sprint-cloud/sprint-apps'
     path: 'argocd/production'

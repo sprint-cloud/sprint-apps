@@ -10,3 +10,7 @@ spec:
   clusterResourceWhitelist:
   - group: 'serving.knative.dev'
     kind: 'Service'
+  - group: argoproj.io/v1alpha1
+    kind: 'Application'
+  sourceRepos: 
+    - 'https://github.com/sprint-cloud/sprint-apps'
