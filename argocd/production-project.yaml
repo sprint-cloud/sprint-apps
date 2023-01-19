@@ -1,0 +1,12 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: app-production
+  namespace: argocd
+spec:
+  destinations:
+  - namespace: production
+    server: 'https://kubernetes.default.svc'
+  clusterResourceWhitelist:
+  - group: 'serving.knative.dev'
+    kind: 'Service'

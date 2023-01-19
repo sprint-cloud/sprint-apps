@@ -1,0 +1,10 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: hello-app
+  namespace: production
+spec:
+  template:
+    spec:
+      containers:
+      - image: gcr.io/knative-samples/helloworld-go
