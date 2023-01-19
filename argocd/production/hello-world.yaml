@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: helloworld
+  name: helloworld-production
   namespace: argocd
   annotations:
     argocd.argoproj.io/sync-wave: "0"
