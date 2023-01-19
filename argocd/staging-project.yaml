@@ -5,7 +5,8 @@ metadata:
   namespace: argocd
 spec:
   destinations:
-  - namespace: staging
+  - server: https://kubernetes.default.svc
+    namespace: staging
   clusterResourceWhitelist:
   - group: 'serving.knative.dev'
     kind: 'Service'
