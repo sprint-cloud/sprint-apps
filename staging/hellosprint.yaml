@@ -13,12 +13,12 @@ spec:
   source:
     chart: sprint-flask-app
     repoURL: https://sprint-cloud.github.io/helm-charts
-    targetRevision: 0.1
+    targetRevision: "0.1"
     helm:
       values: |-
           image: 
             repository: ghcr.io/sprint-cloud/hello-sprint
-            tag: e4cc7fb5cd9b2cf5f6faeff3c9082a75ad93921a
+            tag: e66864c0773579694adbfad5acb18566cf1c4a2a
   syncPolicy:
     automated:
       selfHeal: true
