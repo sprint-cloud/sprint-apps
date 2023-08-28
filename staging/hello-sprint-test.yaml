@@ -12,11 +12,11 @@ spec:
   project: sprint-staging
   source:
     chart: sprint-flask-app
-    helm:
-      repoURL: https://sprint-cloud.github.io/helm-charts
-      targetRevision: 0.1.1
-  values: |
-    image: ghcr.io/sprint-cloud/hello-sprint
-    tag: latest
+    repoURL: https://sprint-cloud.github.io/helm-charts
+    targetRevision: 0.1.1
+  helm:
+    values: |
+      image: ghcr.io/sprint-cloud/hello-sprint
+      tag: latest
 
 
