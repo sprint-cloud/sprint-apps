@@ -14,11 +14,11 @@ spec:
     chart: sprint-flask-app
     repoURL: https://sprint-cloud.github.io/helm-charts
     targetRevision: 0.1.0
-  helm:
-    values: |-
-        image: 
-          repository: ghcr.io/sprint-cloud/hello-sprint
-          tag: latest
+    helm:
+      values: |-
+          image: 
+            repository: ghcr.io/sprint-cloud/hello-sprint
+            tag: latest
   syncPolicy:
     automated:
       selfHeal: true
