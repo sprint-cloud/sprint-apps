@@ -18,5 +18,9 @@ spec:
     values: |
       image: ghcr.io/sprint-cloud/hello-sprint
       tag: latest
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
 
 
