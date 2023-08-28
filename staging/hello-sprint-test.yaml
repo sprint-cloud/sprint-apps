@@ -15,7 +15,7 @@ spec:
     repoURL: https://sprint-cloud.github.io/helm-charts
     targetRevision: 0.1.0
   helm:
-    values: |
+    values: |-
       image: ghcr.io/sprint-cloud/hello-sprint
       tag: latest
   syncPolicy:
