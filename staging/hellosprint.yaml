@@ -18,7 +18,7 @@ spec:
       values: |-
           image: 
             repository: ghcr.io/sprint-cloud/hello-sprint
-            tag: 8a9ebf53b7c2a10068b30bd0c173d60a90733ca2
+            tag: 022c26ba06b4f4c2fcac075664fd675df78e141d
   syncPolicy:
     automated:
       selfHeal: true
