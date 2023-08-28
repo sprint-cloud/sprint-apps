@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: hello-sprint-test
+  namespace: argocd
+  annotations:
+    notifications.argoproj.io/subscribe.on-deployed.slack: deployment
+spec:
+  destination:
+    namespace: sprint-staging
+    server: https://kubernetes.default.svc
+  project: sprint-staging
+  source:
+    chart: sprint-flask-app
+    helm:
+    repoURL: https://sprint-cloud.github.io/helm-charts/
+    targetRevision: 0.1.1
+  values: |
+    image: ghcr.io/sprint-cloud/hello-sprint
+    tag: latest
+
+
